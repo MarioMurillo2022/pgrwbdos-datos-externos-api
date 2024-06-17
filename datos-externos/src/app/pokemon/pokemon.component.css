@@ -40,16 +40,18 @@ p {
     margin-bottom: 10px;
 }
 
-.button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
+.pokemon-link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
     text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.pokemon-link:hover {
+    background-color: #e0e0e0;
 }

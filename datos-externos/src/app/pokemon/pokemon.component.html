@@ -1,4 +1,8 @@
-<h2>Conteo de pokemones</h2>
+<h2>Lista de pokemones</h2>
+<div *ngFor="let pokemon of pokemons">
+    <a class="pokemon-link" href="{{pokemon.url}}">{{pokemon.name}}</a>
+</div>
+<br>
 <p>Tenemos un total de {{ conteo }} pokemons</p>
 <br>
 <div class="card-container">
