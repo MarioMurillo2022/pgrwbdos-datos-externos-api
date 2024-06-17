@@ -1,0 +1,14 @@
+<p>Tenemos un total de {{ conteo }} pokemons</p>
+
+<div class="card-container">
+    <div class="pokemon-card" *ngFor="let pokemon of detallesPokemon">
+        <div class="card-header">
+            <h3>{{ pokemon.id }} - {{ pokemon.name }}</h3>
+        </div>
+        <div class="card-body">
+            <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
+            <p><strong>Altura:</strong> {{ pokemon.height }}</p>
+            <p><strong>Peso:</strong> {{ pokemon.weight }}</p>
+        </div>
+    </div>
+</div>
